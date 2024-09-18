@@ -1,0 +1,73 @@
+ssh-keygen
+[200~
+Usuario@ewelincita MINGW64 ~/UTN-FRA_SO_Vagrant/VagrantFiles/1_equipo (master)
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/jammy64' version '20240912.0.0' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+==> default: Forwarding ports...
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
++---[RSA 3072]----+
+| . +             |
+|  B + .          |
+|.= X +           |
+|+ O B            |
+|+*.= +  S        |
+|O=* o  B .       |
+|BB o ..          |
+|E.* o.           |
+|.  =o            |
++----[SHA256]-----+
+vagrant@VMPruebas:~$
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:ewelincita/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat/etc/os-release
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release 
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add .
+git status
+git config --global user.email "evelinmilirodriguez@gmail.com"
+git config --global user.name "ewelincita"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git add .
+git status
+grep "model name" /proc/cpuinfo | head -n1 | tail -n1 >> datos_usuario.txt
+git add
+git add .
+git status
+git commit -m "feat: Añadiendo información de CPU"
+man grep
+man sort
+grep -v "nologin" /etc/passwd | head -n10 | sort -k7 > "lista_ordenada"
+git add .
+git commit -m "ADD: Listado de usuarios ordenada" 
+git status
+apt search dump traffic
+echo "tcpdump" > comando_dump_net
+echo "apt search dump traffic" >> comando_dump_net
+git add .
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat << EOF >> README.md 
+Alumno: Evelyn
+División: 116
+Turno: Mañana
+EOF
+
+git add .
+git commit -m "docs: tecnicas de HereDoc"
+history -a
